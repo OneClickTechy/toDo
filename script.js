@@ -6,7 +6,9 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (e.target.children.task.value === "") {
     return;
-  }else if(!e.target.children.task.value.trim()){return;}
+  } else if (!e.target.children.task.value.trim()) {
+    return;
+  }
   e.target.children.task.value.trim();
 
   // console.log(e.target.children.task.value);
